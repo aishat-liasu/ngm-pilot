@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@import '../fonts/font.css';
+
+:root {
+  --black: #000;
+  --blackish: #2a2c2f;
+  --bluish: #393e41;
+  --greenish: #243010;
+  --white: #fff;
+  --grey: #d9d9d9;
+  --ebony: #646f58;
+  --turquiose: #b8e2c8;
+  --lightgreen: #70a37f;
+  --mintgreen: #c2f9bb;
+  --dustypink: #aa818b;
+  --taupe: #865b66;
+  --darktaupe: #6d4a53;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: normal;
+  font-family: Inter, 'Segoe UI', monospace;
+}
+
+body {
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 64px;
+}
+h2 {
+  font-size: 48px;
+  margin-bottom: 48px;
+}
+h3 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  h4 {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+}
+

@@ -1,0 +1,7 @@
+.App {
+  text-align: justify;
+}
+
+.hero-pattern img {
+  object-fit: contain;
+}

@@ -1,0 +1,36 @@
+.speaker-card {
+    border: 1px solid grey;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 50px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+}
+
+.speaker-card img {
+    border-radius: 20px 20px 0 0;
+    height: 300px;
+}
+
+.speaker-card article {
+    padding: 10px;
+    background-color: var(--darkgreen);
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+}
+
+.speaker-card article h3 {
+    font-size: 24px;
+    color: var(--darkblue);
+}
+
+.speaker-card article h4 {
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.speaker-card article p {
+    font-size: 24px;
+    color: var(--darkblue);
+    font-weight: 700;
+    margin: 10px auto;
+}

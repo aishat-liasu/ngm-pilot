@@ -9,8 +9,10 @@ import twitterIcon from './images/twitter-icon.png';
 import SpeakerCard from './components/speaker-card';
 import FaqWidget from './components/faq-widget';
 
+import { useCountDown } from './hooks/useCountDown';
+
 function App() {
-  const faq = [
+  const faqList = [
     {
       question: 'How much does the ticket cost?',
       answer: 'It is absolutely free.',
@@ -42,6 +44,40 @@ function App() {
     },
   ];
 
+  const speakerList = [
+    {
+      name: 'Mr Paul Onwuanibe',
+      jobTitle: 'CEO, Landmark Group',
+    },
+    {
+      name: 'Moshood Olajide',
+      jobTitle: 'CFO, Ardova plc, Formerly Forte Oil',
+    },
+    {
+      name: 'Olayinka Subair',
+      jobTitle: 'Country Manager, Pfizer Nigeria',
+    },
+    {
+      name: 'Chikezie Nwosu',
+      jobTitle: 'MD/CEO Waltersmith Petroman Oil Limited',
+    },
+    {
+      name: 'Modupe Kadri',
+      jobTitle: 'CFO MTN Nigeria',
+    },
+    {
+      name: 'Toyin Kekere-Ekun',
+      jobTitle: 'CEO Lotus Financial Services Limited',
+    },
+    {
+      name: 'Humuani Olanbiwonu',
+      jobTitle:
+        'Deputy General Manager Training and Welfare Lagos State Development and Property Corporation',
+    },
+  ];
+
+  const [days, hours, minutes, seconds] = useCountDown('2022-10-15 08:00:00');
+
   return (
     <div className="App">
       <header className="header">
@@ -56,13 +92,55 @@ function App() {
             <p>Promoting Innovative Leaders of Tomorrow</p>
           </fieldset>
 
-          <h3>Time Countdown</h3>
+          {!(days + hours + minutes + seconds <= 0) ? (
+            <div className="countdown-container">
+              <p className="count-container">
+                <span className="value">{days}</span>
+                <span className="type">Days</span>
+              </p>
+              <p className="separator">:</p>
+              <p className="count-container">
+                <span className="value">
+                  {hours >= 10 ? hours : '0' + hours}
+                </span>
+                <span className="type">Hours</span>
+              </p>
+              <p className="separator">:</p>
+              <p className="count-container">
+                <span className="value">
+                  {minutes >= 10 ? minutes : '0' + minutes}
+                </span>
+                <span className="type">Minutes</span>
+              </p>
+              <p className="separator">:</p>
+              <p className="count-container">
+                <span className="value">
+                  {seconds >= 10 ? seconds : '0' + seconds}
+                </span>
+                <span className="type">Seconds</span>
+              </p>
+            </div>
+          ) : (
+            <div className="commence">
+              <h3>The Conference has commenced!!!</h3>
+            </div>
+          )}
 
           <nav>
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="save-link"
+            >
               Save your seat
             </a>
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="download-link"
+            >
               Download event agenda
             </a>
           </nav>
@@ -86,18 +164,23 @@ function App() {
         <h2>Speakers and Guests</h2>
 
         <SpeakerCard
-          altText="Dr Akintoye Akindele"
+          altText="Dr. Akintoye Akindele"
           name="Dr Akintoye Akindele"
           jobTitle="Chairman, Platform Capital"
           role="Keynote Speaker"
           width={500}
         />
 
-        <SpeakerCard
-          altText="Mr Paul Onwuanibe"
-          name="Mr Paul Onwuanibe"
-          jobTitle="CEO, Landmark Group"
-        />
+        <div className="speaker-list">
+          {speakerList.length > 0 &&
+            speakerList.map(speaker => (
+              <SpeakerCard
+                altText={speaker.name}
+                name={speaker.name}
+                jobTitle={speaker.jobTitle}
+              />
+            ))}
+        </div>
       </section>
       <section className="section-ready">
         <h2>Are you ready?</h2>
@@ -106,16 +189,22 @@ function App() {
             <span className="icon">
               <img src={locationIcon} alt="Location Icon" />
             </span>
-            <span>Lagos, Nigeria</span>
+            <span>Zone Tech Park, Gbagada, Lagos</span>
           </p>
           <p>
             <span className="icon">
               <img src={calendarIcon} alt="Calendar Icon" />
             </span>
-            <span>October 15, 2022 | 9 am</span>
+            <span>October 15, 2022 | 8 AM | WAT</span>
           </p>
           <p>
-            <span>Add to your calendar &gt;</span>
+            <a
+              target="_blank"
+              href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NDdmbDI1c2EwazZwYWJ2cHBoNnZ1NjZwdnMgZXZlbnRzLm5nbUBt&amp;tmsrc=events.ngm%40gmail.com"
+              rel="noopener noreferrer"
+            >
+              Add to your calendar &gt;
+            </a>
           </p>
         </div>
       </section>
@@ -130,20 +219,10 @@ function App() {
       <section className="section-faq">
         <h2>FAQ</h2>
 
-        <FaqWidget
-          question="How much does the ticket cost?"
-          answer="It is absolutely free."
-        />
-
-        <FaqWidget
-          question="How do I attend the event virtually?"
-          answer="After registration, a streaming link will be sent to you, so keep an eye on your inbox."
-        />
-
-        <FaqWidget
-          question="Will I be granted entry without a ticket?"
-          answer="No, registration is free but mandatory"
-        />
+        {faqList.length > 0 &&
+          faqList.map(faq => (
+            <FaqWidget question={faq.question} answer={faq.answer} />
+          ))}
       </section>
 
       <footer className="footer">
@@ -155,17 +234,29 @@ function App() {
         </address>
         <ul className="social-links">
           <li>
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="http://https://www.linkedin.com/company/ngm-platform/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={facebookIcon} alt="" />
             </a>
           </li>
           <li>
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://twitter.com/ngm_platform?s=21&t=cKJANbNPca6dtmb2cHRD9Q"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={twitterIcon} alt="" />
             </a>
           </li>
           <li>
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://instagram.com/ngm.platform?igshid=YmMyMTA2M2Y="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={instagramIcon} alt="" />
             </a>
           </li>

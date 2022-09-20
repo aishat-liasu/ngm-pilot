@@ -1,22 +1,25 @@
 
 details {
-    width: 60%;
-    padding: 20px 30px;
+    width: 70%;
     border-radius: 10px;
     background-color: var(--white);
     margin-bottom: 50px;
-    cursor: pointer;
 }
 
 details p {
-    color: var(--darkgreen);
-    margin-top: 20px;
+    color: var(--darkblue);
+    font-weight: 600;
     font-size: 24px;
+    text-align: left;
+    padding: 0 30px 20px;
 }
 summary {
     list-style: none;
     position: relative;
     font-size: 24px;
+    text-align: left;
+    padding: 20px 30px;
+    cursor: pointer;
 }
 summary::-webkit-details-marker {
     display: none; 
@@ -26,12 +29,13 @@ details summary::after{
     content: url('../images/right-arrow-icon.png'); 
     color: var(--darkgreen);
     position: absolute;
-    right: 0;
+    right: 30px;
+    top: 20px;
+    margin-left: 20px;
+
 }
 
 details[open] summary::after { 
-    content: url('../images/down-arrow-icon.png'); 
-    color: var(--darkgreen);
-    font-size: 20px;
-    font-weight: 500;
+    content: url('../images/down-arrow-icon.png');
+
 }

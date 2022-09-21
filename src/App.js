@@ -1,5 +1,5 @@
 import './styles/App.css';
-import heroPattern from './images/hero-pattern.png';
+
 import locationIcon from './images/location-icon.png';
 import calendarIcon from './images/calendar-icon.png';
 import facebookIcon from './images/facebook-icon.png';
@@ -78,152 +78,157 @@ function App() {
 
   const [days, hours, minutes, seconds] = useCountDown('2022-10-15 08:00:00');
 
+  const CountDownTimeView = () => {
+    return (
+      <div className="countdown-view">
+        <p className="count-container">
+          <span className="value">{days >= 10 ? days : '0' + days}</span>
+          <span className="type">Days</span>
+        </p>
+        <p className="separator">:</p>
+        <p className="count-container">
+          <span className="value">{hours >= 10 ? hours : '0' + hours}</span>
+          <span className="type">Hours</span>
+        </p>
+        <p className="separator">:</p>
+        <p className="count-container">
+          <span className="value">
+            {minutes >= 10 ? minutes : '0' + minutes}
+          </span>
+          <span className="type">Mins</span>
+        </p>
+        <p className="separator">:</p>
+        <p className="count-container">
+          <span className="value">
+            {seconds >= 10 ? seconds : '0' + seconds}
+          </span>
+          <span className="type">Secs</span>
+        </p>
+      </div>
+    );
+  };
+
   return (
     <div className="App">
       <header className="header">
         <img src="" alt="NGM Logo" />
       </header>
-      <div className="hero">
-        <section className="hero-content">
-          <h1>NGM Conference</h1>
-          <fieldset>
-            <legend>THEME:</legend>
-            <h2>PILOT</h2>
-            <p>Promoting Innovative Leaders of Tomorrow</p>
-          </fieldset>
+      <main className="main">
+        <div className="hero">
+          <section className="hero-content">
+            <h1>NGM Conference</h1>
+            <fieldset>
+              <legend>THEME:</legend>
+              <h2>PILOT</h2>
+              <p>Promoting Innovative Leaders of Tomorrow</p>
+            </fieldset>
 
-          {!(days + hours + minutes + seconds <= 0) ? (
-            <div className="countdown-container">
-              <p className="count-container">
-                <span className="value">{days}</span>
-                <span className="type">Days</span>
-              </p>
-              <p className="separator">:</p>
-              <p className="count-container">
-                <span className="value">
-                  {hours >= 10 ? hours : '0' + hours}
-                </span>
-                <span className="type">Hours</span>
-              </p>
-              <p className="separator">:</p>
-              <p className="count-container">
-                <span className="value">
-                  {minutes >= 10 ? minutes : '0' + minutes}
-                </span>
-                <span className="type">Minutes</span>
-              </p>
-              <p className="separator">:</p>
-              <p className="count-container">
-                <span className="value">
-                  {seconds >= 10 ? seconds : '0' + seconds}
-                </span>
-                <span className="type">Seconds</span>
-              </p>
-            </div>
-          ) : (
-            <div className="commence">
-              <h3>The Conference has commenced!!!</h3>
-            </div>
-          )}
+            {!(days + hours + minutes + seconds <= 0) ? (
+              <CountDownTimeView />
+            ) : (
+              <div className="commence">
+                <h3>The Conference has commenced!!!</h3>
+              </div>
+            )}
 
-          <nav>
-            <a
-              href="http://"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="save-link"
-            >
-              Save your seat
-            </a>
-            <a
-              href="http://"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="download-link"
-            >
-              Download event agenda
-            </a>
-          </nav>
+            <nav>
+              <a
+                href="https://www.eventbrite.com/e/ngm-conference-tickets-401750997047"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="save-link"
+              >
+                Save your seat
+              </a>
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="download-link"
+              >
+                Download event agenda
+              </a>
+            </nav>
+          </section>
+          <div className="hero-pattern"></div>
+        </div>
+        <section className="section-pilot">
+          <h2>Why PILOT?</h2>
+          <p>
+            <span className="bolden">Nasir Giwa Mentorship</span> is focused on
+            creating the next generation of top tier leaders, entrepreneurs and
+            business executives. This conference intends to create the breeding
+            ground to provide access to a network of people who have set the
+            path, or are trying to find the path. A network that participants
+            can leverage during and after the event.
+          </p>
         </section>
-        <div className="hero-pattern">
-          {/* <img src={heroPattern} alt="Abstract design" /> */}
-        </div>
-      </div>
-      <section className="section-pilot">
-        <h2>Why PILOT?</h2>
-        <p>
-          <span className="bolden">Nasir Giwa Mentorship</span> is focused on
-          creating the next generation of top tier leaders, entrepreneurs and
-          business executives. This conference intends to create the breeding
-          ground to provide access to a network of people who have set the path,
-          or are trying to find the path. A network that participants can
-          leverage during and after the event.
-        </p>
-      </section>
-      <section className="section-speakers">
-        <h2>Speakers and Guests</h2>
+        <section className="section-speakers">
+          <h2>Speakers and Guests</h2>
 
-        <SpeakerCard
-          altText="Dr. Akintoye Akindele"
-          name="Dr Akintoye Akindele"
-          jobTitle="Chairman, Platform Capital"
-          role="Keynote Speaker"
-          width={500}
-        />
+          <SpeakerCard
+            altText="Dr. Akintoye Akindele"
+            name="Dr Akintoye Akindele"
+            jobTitle="Chairman, Platform Capital"
+            role="Keynote Speaker"
+            width={500}
+          />
 
-        <div className="speaker-list">
-          {speakerList.length > 0 &&
-            speakerList.map(speaker => (
-              <SpeakerCard
-                altText={speaker.name}
-                name={speaker.name}
-                jobTitle={speaker.jobTitle}
-              />
+          <div className="speaker-list">
+            {speakerList.length > 0 &&
+              speakerList.map(speaker => (
+                <SpeakerCard
+                  altText={speaker.name}
+                  name={speaker.name}
+                  jobTitle={speaker.jobTitle}
+                />
+              ))}
+          </div>
+        </section>
+        <section className="section-ready">
+          <h2>Are you ready?</h2>
+          <div>
+            <p>
+              <span className="icon">
+                <img src={locationIcon} alt="Location Icon" />
+              </span>
+              <span>Zone Tech Park, Gbagada, Lagos</span>
+            </p>
+            <p>
+              <span className="icon">
+                <img src={calendarIcon} alt="Calendar Icon" />
+              </span>
+              <span>October 15, 2022 | 8 AM | WAT</span>
+            </p>
+            <p>
+              <a
+                target="_blank"
+                href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NDdmbDI1c2EwazZwYWJ2cHBoNnZ1NjZwdnMgZXZlbnRzLm5nbUBt&amp;tmsrc=events.ngm%40gmail.com"
+                rel="noopener noreferrer"
+              >
+                Add to your calendar &gt;
+              </a>
+            </p>
+          </div>
+        </section>
+
+        <section className="section-sponsors">
+          <h2>PARTNERS AND SPONSORS</h2>
+          <p>
+            Want to sponsor the event? Please contact us at
+            events.ngmplatform.com
+          </p>
+        </section>
+
+        <section className="section-faq">
+          <h2>FAQ</h2>
+
+          {faqList.length > 0 &&
+            faqList.map(faq => (
+              <FaqWidget question={faq.question} answer={faq.answer} />
             ))}
-        </div>
-      </section>
-      <section className="section-ready">
-        <h2>Are you ready?</h2>
-        <div>
-          <p>
-            <span className="icon">
-              <img src={locationIcon} alt="Location Icon" />
-            </span>
-            <span>Zone Tech Park, Gbagada, Lagos</span>
-          </p>
-          <p>
-            <span className="icon">
-              <img src={calendarIcon} alt="Calendar Icon" />
-            </span>
-            <span>October 15, 2022 | 8 AM | WAT</span>
-          </p>
-          <p>
-            <a
-              target="_blank"
-              href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NDdmbDI1c2EwazZwYWJ2cHBoNnZ1NjZwdnMgZXZlbnRzLm5nbUBt&amp;tmsrc=events.ngm%40gmail.com"
-              rel="noopener noreferrer"
-            >
-              Add to your calendar &gt;
-            </a>
-          </p>
-        </div>
-      </section>
-
-      <section className="section-sponsors">
-        <h2>PARTNERS AND SPONSORS</h2>
-        <p>
-          Want to sponsor the event? Please contact us at events.ngmplatform.com
-        </p>
-      </section>
-
-      <section className="section-faq">
-        <h2>FAQ</h2>
-
-        {faqList.length > 0 &&
-          faqList.map(faq => (
-            <FaqWidget question={faq.question} answer={faq.answer} />
-          ))}
-      </section>
+        </section>
+      </main>
 
       <footer className="footer">
         <h2>GET IN TOUCH</h2>

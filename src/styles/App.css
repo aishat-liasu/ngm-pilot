@@ -1,18 +1,21 @@
 .App {
-  text-align: justify;
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 1600px;
 }
 
-.App .header {
+.header {
   height: 100px;
 }
 
-.App h2 {
+.main h1, .main h2 {
   text-transform: uppercase;
 }
+
+/* hero styles */
 
 .hero {
   display: flex;
@@ -26,12 +29,12 @@
   flex-direction: column;
   width: 45%;
   margin-left: 5%;
+  z-index: 5;
 }
 
 .hero-content h1 {
   width: 70%;
   color: var(--darkblue);
-  text-transform: uppercase;
   margin-bottom: 30px;
 }
 
@@ -54,8 +57,6 @@
   background-color: var(--darkblue);
   color: var(--white);
   padding: 14px 25px;
-  margin: 0;
-  /* margin-right: 30px; */
   font-weight: 900;
 }
 
@@ -63,12 +64,10 @@
   color: var(--darkblue);
   font-weight: 500;
   font-size: 32px;
-  margin: 0;
   width: 55%;
-  text-align: left;
 }
 
-.hero-content .countdown-container {
+.hero-content .countdown-view {
   display: flex;
   margin-top: 30px;
 }
@@ -77,6 +76,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hero-content .count-container .value {
@@ -84,20 +85,19 @@
   background-color: var(--darkgreen);
   color: var(--darkblue);
   border-radius: 10px;
-  text-align: center;
   font-size: 32px;
   font-weight: 600;
+  width: 110px;
 }
 
 .hero-content .count-container .type {
-  text-align: center;
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 500;
   color: var(--darkblue);
 }
 
-.hero-content .countdown-container .separator {
+.hero-content .countdown-view .separator {
   font-size: 64px;
   font-weight: 900;
   color: var(--darkblue);
@@ -108,7 +108,6 @@
 .hero-content .commence {
   margin-top: 30px;
   color: red;
-
 }
 
 .hero-content nav {
@@ -121,6 +120,10 @@
   text-decoration: none;
   padding: 20px 40px;
   border-radius: 30px;
+}
+
+.hero-content nav a:hover {
+  text-decoration: underline;
 }
 
 .hero-content nav .save-link {
@@ -136,7 +139,7 @@
 
 .hero-pattern {
   min-width: 499px;
-  background: url('../images/hero-pattern.png') no-repeat left top;
+  background: url('../images/hero-pattern.svg') no-repeat left top;
 }
 
 
@@ -199,20 +202,17 @@
 .section-ready h2 {
   width: 30%;
   margin-right: 30px;
-  text-align: left;
 }
 
-.section-ready div a{
+.section-ready div a {
   text-decoration: none;
   color: var(--white);
-  
 }
 
 .section-ready div a:hover{
   text-decoration: none;
   color: var(--white);
   text-decoration: underline;
-  
 }
 
 .section-ready div p {

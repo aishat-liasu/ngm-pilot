@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/aishat-liasu/ngm-pilot/static/css/main.3d3af7e5.css",
+    "main.js": "/aishat-liasu/ngm-pilot/static/js/main.ec771920.js",
+    "static/js/787.48bd1c06.chunk.js": "/aishat-liasu/ngm-pilot/static/js/787.48bd1c06.chunk.js",
+    "static/media/Inter-Bold.woff?v=3.18": "/aishat-liasu/ngm-pilot/static/media/Inter-Bold.1c3dfbb05cd4ae02710e.woff",
+    "static/media/Inter-Black.woff?v=3.18": "/aishat-liasu/ngm-pilot/static/media/Inter-Black.e258f99875304915b846.woff",
+    "static/media/Inter-Regular.woff?v=3.18": "/aishat-liasu/ngm-pilot/static/media/Inter-Regular.8398b3762d7b06fc3b8c.woff",
+    "static/media/Inter-Bold.woff2?v=3.18": "/aishat-liasu/ngm-pilot/static/media/Inter-Bold.a808c21aaa221f6d24f9.woff2",
+    "static/media/Inter-Black.woff2?v=3.18": "/aishat-liasu/ngm-pilot/static/media/Inter-Black.ef2d12b9f04d00e319f2.woff2",
+    "static/media/Inter-Regular.woff2?v=3.18": "/aishat-liasu/ngm-pilot/static/media/Inter-Regular.6cc68d6b835a3dd06e7e.woff2",
+    "static/media/hero-pattern.svg": "/aishat-liasu/ngm-pilot/static/media/hero-pattern.66887fd1a0b1b14b8a75.svg",
+    "index.html": "/aishat-liasu/ngm-pilot/index.html",
+    "main.3d3af7e5.css.map": "/aishat-liasu/ngm-pilot/static/css/main.3d3af7e5.css.map",
+    "main.ec771920.js.map": "/aishat-liasu/ngm-pilot/static/js/main.ec771920.js.map",
+    "787.48bd1c06.chunk.js.map": "/aishat-liasu/ngm-pilot/static/js/787.48bd1c06.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d3af7e5.css",
+    "static/js/main.ec771920.js"
+  ]
+}

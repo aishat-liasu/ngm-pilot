@@ -18,7 +18,7 @@ html,
 body {
   background-color: var(--white);
   color: var(--black);
-  font-size: 20px;
+  font-size: 16px;
 line-height: 1.25;
   font-weight: normal;
   font-family: Inter, 'Segoe UI', monospace;
@@ -43,14 +43,14 @@ p {
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 56px;
   font-weight: 900;
 }
 h2 {
-  font-size: 48px;
+  font-size: 40px;
 }
 h3 {
-  font-size: 32px;
+  font-size: 28px;
 }
 h4 {
   font-size: 20px;

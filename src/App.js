@@ -6,6 +6,8 @@ import facebookIcon from './images/facebook-icon.png';
 import instagramIcon from './images/instagram-icon.png';
 import twitterIcon from './images/twitter-icon.png';
 
+import logo from './images/logo.png';
+
 import SpeakerCard from './components/speaker-card';
 import FaqWidget from './components/faq-widget';
 
@@ -95,14 +97,14 @@ function App() {
           <span className="value">
             {minutes >= 10 ? minutes : '0' + minutes}
           </span>
-          <span className="type">Mins</span>
+          <span className="type">Minutes</span>
         </p>
         <p className="separator">:</p>
         <p className="count-container">
           <span className="value">
             {seconds >= 10 ? seconds : '0' + seconds}
           </span>
-          <span className="type">Secs</span>
+          <span className="type">Seconds</span>
         </p>
       </div>
     );
@@ -111,7 +113,7 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-        <img src="" alt="NGM Logo" />
+        <img src={logo} alt="NGM Logo" />
       </header>
       <main className="main">
         <div className="hero">

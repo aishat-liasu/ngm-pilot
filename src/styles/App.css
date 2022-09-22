@@ -2,13 +2,14 @@
   text-align: left;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; 
+  /* align-items: center; */
   max-width: 1600px;
 }
 
 .header {
-  height: 100px;
+  height: 150px;
+  margin-left: 5%;
 }
 
 .main h1, .main h2 {
@@ -20,7 +21,7 @@
 .hero {
   display: flex;
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 150px);
   justify-content: space-between;
 }
 
@@ -62,8 +63,8 @@
 
 .hero-content fieldset p {
   color: var(--darkblue);
-  font-weight: 500;
-  font-size: 32px;
+  font-weight: 600;
+  font-size: 28px;
   width: 55%;
 }
 
@@ -81,7 +82,7 @@
 }
 
 .hero-content .count-container .value {
-  padding: 30px;
+  padding: 25px 15px;
   background-color: var(--darkgreen);
   color: var(--darkblue);
   border-radius: 10px;
@@ -92,9 +93,9 @@
 
 .hero-content .count-container .type {
   text-transform: uppercase;
-  font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--darkblue);
+  margin-top: 5px;
 }
 
 .hero-content .countdown-view .separator {

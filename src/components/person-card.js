@@ -1,6 +1,6 @@
-import '../styles/speaker-card.css';
+import '../styles/person-card.css';
 
-function SpeakerCard({
+function PersonCard({
   imageSrc = '',
   altText = '',
   width = 340,
@@ -9,15 +9,15 @@ function SpeakerCard({
   role = '',
 }) {
   return (
-    <section className="speaker-card" style={{ width: `${width}px` }}>
+    <li className="person-card" style={{ width: `${width}px` }}>
       <img src={imageSrc} alt={altText} />
       <article>
         <h3>{name}</h3>
         <h4>{jobTitle}</h4>
         {role && <p>{role}</p>}
       </article>
-    </section>
+    </li>
   );
 }
 
-export default SpeakerCard;
+export default PersonCard;

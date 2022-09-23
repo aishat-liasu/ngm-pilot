@@ -6,7 +6,6 @@ function PersonCard({
   width = 340,
   name,
   jobTitle,
-  role = '',
 }) {
   return (
     <li className="person-card" style={{ width: `${width}px` }}>
@@ -14,7 +13,6 @@ function PersonCard({
       <article>
         <h3>{name}</h3>
         <h4>{jobTitle}</h4>
-        {role && <p>{role}</p>}
       </article>
     </li>
   );

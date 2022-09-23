@@ -8,7 +8,7 @@ import twitterIcon from './images/twitter-icon.png';
 
 import logo from './images/logo.png';
 
-import SpeakerCard from './components/speaker-card';
+import PersonCard from './components/person-card';
 import FaqWidget from './components/faq-widget';
 
 import { useCountDown } from './hooks/useCountDown';
@@ -75,6 +75,17 @@ function App() {
       name: 'Humuani Olanbiwonu',
       jobTitle:
         'Deputy General Manager Training and Welfare Lagos State Development and Property Corporation',
+    },
+  ];
+
+  const moderatorList = [
+    {
+      name: 'Kofo Olokun-Olawoyin,',
+      jobTitle: 'Group head Legal & Company Secretary, Transcorp Pl',
+    },
+    {
+      name: 'Abdulmajeed Amusah',
+      jobTitle: 'Technical Assistant to the executive Secretary, SMDF',
     },
   ];
 
@@ -165,27 +176,56 @@ function App() {
             can leverage during and after the event.
           </p>
         </section>
+        <section className="section-keynote">
+          <article className="summary">
+            <img src="" alt="Dr. Akintoye Akindele" width={450} />
+            <h3>Dr. Akintoye Akindele</h3>
+            <p>Chairman, Platform Capital</p>
+          </article>
+          <article className="content">
+            <h2>Keynote Speaker</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl
+              elementum sem pulvinar tempus ipsum, amet, diam. Rutrum ultricies
+              sed et risus condimentum parturient. Dignissim in sed turpis
+              sodales lacinia. Ullamcorper non ullamcorper aliquet lacus, sem.
+              Maecenas urna ultrices ullamcorper quam orci. Augue elit sit nec
+              maecenas elementum convallis. Turpis et ullamcorper risus, in
+              morbi cras ipsum senectus euismod. Urna amet nibh sed donec lacus.
+              lamcorper quam orci. Augue elit sit nec maecenas elementum
+              convallis. Turpis et ullamcorper risus, in morbi cras ipsum
+              senectus euismod.
+            </p>
+          </article>
+        </section>
         <section className="section-speakers">
           <h2>Speakers and Guests</h2>
 
-          <SpeakerCard
-            altText="Dr. Akintoye Akindele"
-            name="Dr Akintoye Akindele"
-            jobTitle="Chairman, Platform Capital"
-            role="Keynote Speaker"
-            width={500}
-          />
-
-          <div className="speaker-list">
+          <ul className="speaker-list">
             {speakerList.length > 0 &&
               speakerList.map(speaker => (
-                <SpeakerCard
+                <PersonCard
                   altText={speaker.name}
                   name={speaker.name}
                   jobTitle={speaker.jobTitle}
                 />
               ))}
-          </div>
+          </ul>
+        </section>
+
+        <section className="section-moderators">
+          <h2>Moderators</h2>
+
+          <ul className="moderator-list">
+            {moderatorList.length > 0 &&
+              moderatorList.map(moderator => (
+                <PersonCard
+                  altText={moderator.name}
+                  name={moderator.name}
+                  jobTitle={moderator.jobTitle}
+                />
+              ))}
+          </ul>
         </section>
         <section className="section-ready">
           <h2>Are you ready?</h2>

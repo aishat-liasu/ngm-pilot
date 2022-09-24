@@ -3,12 +3,19 @@ import '../styles/person-card.css';
 function PersonCard({
   imageSrc = '',
   altText = '',
-  width = 340,
   name,
   jobTitle,
+  index,
+  setOpenPopup,
+  setPopupData,
 }) {
+  function openPopup() {
+    setPopupData({ imageSrc, altText, name });
+    setOpenPopup(true);
+  }
+
   return (
-    <li className="person-card" style={{ width: `${width}px` }}>
+    <li className="person-card" key={index} onClick={openPopup}>
       <img src={imageSrc} alt={altText} />
       <article>
         <h3>{name}</h3>

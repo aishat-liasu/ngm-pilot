@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import './styles/App.css';
 
 import locationIcon from './images/location-icon.png';
@@ -5,11 +7,13 @@ import calendarIcon from './images/calendar-icon.png';
 import facebookIcon from './images/facebook-icon.png';
 import instagramIcon from './images/instagram-icon.png';
 import twitterIcon from './images/twitter-icon.png';
+import linkedInIcon from './images/linkedin-icon.png';
 
 import logo from './images/logo.png';
 
 import PersonCard from './components/person-card';
 import FaqWidget from './components/faq-widget';
+import PersonPopup from './components/person-popup';
 
 import { useCountDown } from './hooks/useCountDown';
 
@@ -121,6 +125,9 @@ function App() {
     );
   };
 
+  const [openPopup, setOpenPopup] = useState(false);
+  const [popupData, setPopupData] = useState({});
+
   return (
     <div className="App">
       <header className="header">
@@ -193,8 +200,7 @@ function App() {
               maecenas elementum convallis. Turpis et ullamcorper risus, in
               morbi cras ipsum senectus euismod. Urna amet nibh sed donec lacus.
               lamcorper quam orci. Augue elit sit nec maecenas elementum
-              convallis. Turpis et ullamcorper risus, in morbi cras ipsum
-              senectus euismod.
+              convallis.
             </p>
           </article>
         </section>
@@ -203,26 +209,38 @@ function App() {
 
           <ul className="speaker-list">
             {speakerList.length > 0 &&
-              speakerList.map(speaker => (
+              speakerList.map((speaker, index) => (
                 <PersonCard
                   altText={speaker.name}
                   name={speaker.name}
                   jobTitle={speaker.jobTitle}
+                  index={index}
+                  openPopup={openPopup}
+                  setOpenPopup={setOpenPopup}
+                  setPopupData={setPopupData}
                 />
               ))}
           </ul>
         </section>
+
+        {openPopup && (
+          <PersonPopup popupControl={setOpenPopup} {...popupData} />
+        )}
 
         <section className="section-moderators">
           <h2>Moderators</h2>
 
           <ul className="moderator-list">
             {moderatorList.length > 0 &&
-              moderatorList.map(moderator => (
+              moderatorList.map((moderator, index) => (
                 <PersonCard
                   altText={moderator.name}
                   name={moderator.name}
                   jobTitle={moderator.jobTitle}
+                  index={index}
+                  openPopup={openPopup}
+                  setOpenPopup={setOpenPopup}
+                  setPopupData={setPopupData}
                 />
               ))}
           </ul>
@@ -256,9 +274,10 @@ function App() {
 
         <section className="section-sponsors">
           <h2>PARTNERS AND SPONSORS</h2>
+          <h3>Want to sponsor the event?</h3>
           <p>
-            Want to sponsor the event? Please contact us at
-            events.ngmplatform.com
+            <span>Please contact us at </span>
+            <a href="mailto:events@ngmplatform.com">events@ngmplatform.com</a>
           </p>
         </section>
 
@@ -286,7 +305,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={facebookIcon} alt="" />
+              <img src={linkedInIcon} alt="" />
             </a>
           </li>
           <li>

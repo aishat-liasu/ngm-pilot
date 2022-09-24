@@ -13,12 +13,14 @@ details p {
     text-align: left;
     padding: 0 30px 20px;
 }
+
 summary {
     list-style: none;
     position: relative;
     font-size: 24px;
     text-align: left;
     padding: 20px 30px;
+    padding-right: 40px;
     cursor: pointer;
 }
 summary::-webkit-details-marker {
@@ -32,10 +34,27 @@ details summary::after{
     right: 30px;
     top: 20px;
     margin-left: 20px;
-
 }
 
 details[open] summary::after { 
     content: url('../images/down-arrow-icon.png');
+}
 
+@media screen and (max-width: 700px) {
+    details {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    details p {
+        font-size: 16px;
+    }
+
+    summary {
+        font-size: 16px;
+    }
+
+    details summary::after{ 
+        right: 10px;
+    }
 }

@@ -1,0 +1,60 @@
+.person-popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: none;
+  }
+
+.person-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 5% 7.5%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10%;
+    background-color: var(--white);
+    width: 50%;
+    position: relative;
+}
+
+.person-content .close-btn {
+    align-self: flex-end;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.person-content .close-btn img {
+    width: 30px;
+}
+
+.person-content .person-profile {
+    margin: 0 auto;
+}
+
+.person-content .person-profile h3 {
+    color: var(--darkblue);
+    font-size: 24px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 700px) {
+    .person-content {
+        width: 80%;
+        margin-top: 20%;
+    }
+}

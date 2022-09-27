@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ngm-pilot/static/css/main.1d86430a.css",
-    "main.js": "/ngm-pilot/static/js/main.572700d9.js",
+    "main.css": "/ngm-pilot/static/css/main.a167e3ef.css",
+    "main.js": "/ngm-pilot/static/js/main.e2d13aad.js",
     "static/js/787.48bd1c06.chunk.js": "/ngm-pilot/static/js/787.48bd1c06.chunk.js",
     "static/media/Inter-Bold.woff?v=3.18": "/ngm-pilot/static/media/Inter-Bold.1c3dfbb05cd4ae02710e.woff",
     "static/media/Inter-Black.woff?v=3.18": "/ngm-pilot/static/media/Inter-Black.e258f99875304915b846.woff",
@@ -11,14 +11,13 @@
     "static/media/Inter-Regular.woff2?v=3.18": "/ngm-pilot/static/media/Inter-Regular.6cc68d6b835a3dd06e7e.woff2",
     "static/media/logo.png": "/ngm-pilot/static/media/logo.23320f03472d8e74e031.png",
     "static/media/hero-pattern.svg": "/ngm-pilot/static/media/hero-pattern.66887fd1a0b1b14b8a75.svg",
-    "static/media/hero-pattern_mobile.svg": "/ngm-pilot/static/media/hero-pattern_mobile.853a97431063da1e58a5.svg",
     "index.html": "/ngm-pilot/index.html",
-    "main.1d86430a.css.map": "/ngm-pilot/static/css/main.1d86430a.css.map",
-    "main.572700d9.js.map": "/ngm-pilot/static/js/main.572700d9.js.map",
+    "main.a167e3ef.css.map": "/ngm-pilot/static/css/main.a167e3ef.css.map",
+    "main.e2d13aad.js.map": "/ngm-pilot/static/js/main.e2d13aad.js.map",
     "787.48bd1c06.chunk.js.map": "/ngm-pilot/static/js/787.48bd1c06.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d86430a.css",
-    "static/js/main.572700d9.js"
+    "static/css/main.a167e3ef.css",
+    "static/js/main.e2d13aad.js"
   ]
 }

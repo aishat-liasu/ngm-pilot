@@ -147,7 +147,7 @@ function App() {
 
     speakerContainer.scrollLeft -= 0.2 * speakerContainer.scrollWidth;
 
-    if (speakerContainer.scrollLeft == 0) {
+    if (speakerContainer.scrollLeft === 0) {
       setLeftArrowDisabled(true);
     }
   }

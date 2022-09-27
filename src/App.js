@@ -4,11 +4,9 @@ import './styles/App.css';
 
 import locationIcon from './images/location-icon.png';
 import calendarIcon from './images/calendar-icon.png';
-import facebookIcon from './images/facebook-icon.png';
 import instagramIcon from './images/instagram-icon.png';
 import twitterIcon from './images/twitter-icon.png';
 import linkedInIcon from './images/linkedin-icon.png';
-
 import logo from './images/logo.png';
 
 import PersonCard from './components/person-card';
@@ -125,8 +123,34 @@ function App() {
     );
   };
 
+  //popup state control
   const [openPopup, setOpenPopup] = useState(false);
   const [popupData, setPopupData] = useState({});
+
+  //slider button state control
+  const [leftArrowDisabled, setLeftArrowDisabled] = useState(true);
+  const [rightArrowDisabled, setRightArrowDisabled] = useState(false);
+  const speakerContainer = document.querySelector('.speaker-list');
+
+  function scrollRight() {
+    setLeftArrowDisabled(false);
+
+    speakerContainer.scrollLeft += 0.2 * speakerContainer.scrollWidth;
+
+    if (speakerContainer.scrollLeft >= 0.8 * speakerContainer.scrollWidth) {
+      setRightArrowDisabled(true);
+    }
+  }
+
+  function scrollLeft() {
+    setRightArrowDisabled(false);
+
+    speakerContainer.scrollLeft -= 0.2 * speakerContainer.scrollWidth;
+
+    if (speakerContainer.scrollLeft == 0) {
+      setLeftArrowDisabled(true);
+    }
+  }
 
   return (
     <div className="App">
@@ -199,28 +223,43 @@ function App() {
               Maecenas urna ultrices ullamcorper quam orci. Augue elit sit nec
               maecenas elementum convallis. Turpis et ullamcorper risus, in
               morbi cras ipsum senectus euismod. Urna amet nibh sed donec lacus.
-              lamcorper quam orci. Augue elit sit nec maecenas elementum
-              convallis.
+              lamcorper quam orci.
             </p>
           </article>
         </section>
         <section className="section-speakers">
           <h2>Speakers and Guests</h2>
 
-          <ul className="speaker-list">
-            {speakerList.length > 0 &&
-              speakerList.map((speaker, index) => (
-                <PersonCard
-                  altText={speaker.name}
-                  name={speaker.name}
-                  jobTitle={speaker.jobTitle}
-                  index={index}
-                  openPopup={openPopup}
-                  setOpenPopup={setOpenPopup}
-                  setPopupData={setPopupData}
-                />
-              ))}
-          </ul>
+          <div className="slider">
+            <button
+              onClick={scrollLeft}
+              className="slider-btn left-arrow"
+              disabled={leftArrowDisabled}
+            >
+              &lt;
+            </button>
+            <ul className="speaker-list">
+              {speakerList.length > 0 &&
+                speakerList.map((speaker, index) => (
+                  <PersonCard
+                    altText={speaker.name}
+                    name={speaker.name}
+                    jobTitle={speaker.jobTitle}
+                    index={index}
+                    openPopup={openPopup}
+                    setOpenPopup={setOpenPopup}
+                    setPopupData={setPopupData}
+                  />
+                ))}
+            </ul>
+            <button
+              onClick={scrollRight}
+              className="slider-btn right-arrow"
+              disabled={rightArrowDisabled}
+            >
+              &gt;
+            </button>
+          </div>
         </section>
 
         {openPopup && (

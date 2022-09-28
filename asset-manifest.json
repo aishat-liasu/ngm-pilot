@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ngm-pilot/static/css/main.a167e3ef.css",
+    "main.css": "/ngm-pilot/static/css/main.4127e150.css",
     "main.js": "/ngm-pilot/static/js/main.569f535a.js",
     "static/js/787.48bd1c06.chunk.js": "/ngm-pilot/static/js/787.48bd1c06.chunk.js",
     "static/media/Inter-Bold.woff?v=3.18": "/ngm-pilot/static/media/Inter-Bold.1c3dfbb05cd4ae02710e.woff",
@@ -12,12 +12,12 @@
     "static/media/logo.png": "/ngm-pilot/static/media/logo.23320f03472d8e74e031.png",
     "static/media/hero-pattern.svg": "/ngm-pilot/static/media/hero-pattern.66887fd1a0b1b14b8a75.svg",
     "index.html": "/ngm-pilot/index.html",
-    "main.a167e3ef.css.map": "/ngm-pilot/static/css/main.a167e3ef.css.map",
+    "main.4127e150.css.map": "/ngm-pilot/static/css/main.4127e150.css.map",
     "main.569f535a.js.map": "/ngm-pilot/static/js/main.569f535a.js.map",
     "787.48bd1c06.chunk.js.map": "/ngm-pilot/static/js/787.48bd1c06.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a167e3ef.css",
+    "static/css/main.4127e150.css",
     "static/js/main.569f535a.js"
   ]
 }

@@ -9,6 +9,19 @@ import twitterIcon from './images/twitter-icon.png';
 import linkedInIcon from './images/linkedin-icon.png';
 import logo from './images/logo.png';
 
+import AkintoyoAkindele from './images/speakers/Akintoye-Akindele.png';
+import Amussah from './images/speakers/Amussah.jpg';
+import BimpeAfolabi from './images/speakers/Bimpe-Afolabi.png';
+import Fahm from './images/speakers/Hon-Fahm.jpg';
+import Rotimi from './images/speakers/Hon-Rotimi.jpg';
+import Kadri from './images/speakers/Kadri.jpg';
+import KekereEkun from './images/speakers/Kekere-Ekun.jpg';
+import Kofo from './images/speakers/Kofo.jpg';
+import MoshoodOlajide from './images/speakers/Moshood-Olajide.jpg';
+import Nwosu from './images/speakers/Nwosu.jpg';
+import PaulOnwuanibe from './images/speakers/Paul-Onwuanibe.jpg';
+import ShakiruLawal from './images/speakers/Shakiru-Lawal.jpg';
+
 import PersonCard from './components/person-card';
 import FaqWidget from './components/faq-widget';
 import PersonPopup from './components/person-popup';
@@ -52,10 +65,12 @@ function App() {
     {
       name: 'Mr Paul Onwuanibe',
       jobTitle: 'CEO, Landmark Group',
+      imageSrc: PaulOnwuanibe,
     },
     {
       name: 'Moshood Olajide',
       jobTitle: 'CFO, Ardova plc, Formerly Forte Oil',
+      imageSrc: MoshoodOlajide,
     },
     {
       name: 'Olayinka Subair',
@@ -64,15 +79,32 @@ function App() {
     {
       name: 'Chikezie Nwosu',
       jobTitle: 'MD/CEO Waltersmith Petroman Oil Limited',
+      imageSrc: Nwosu,
     },
     {
       name: 'Modupe Kadri',
       jobTitle: 'CFO MTN Nigeria',
+      imageSrc: Kadri,
     },
     {
       name: 'Toyin Kekere-Ekun',
       jobTitle: 'CEO Lotus Financial Services Limited',
+      imageSrc: KekereEkun,
     },
+
+    {
+      name: 'Shakiru Lawal',
+      jobTitle: 'Country Human Resource Manager, Nestle',
+      imageSrc: ShakiruLawal,
+    },
+
+    {
+      name: 'Bimpe Afolabi',
+      jobTitle:
+        'Partner in Internal Audit, Governance, Risk and Compliance Services, KPMG Nigeria',
+      imageSrc: BimpeAfolabi,
+    },
+
     {
       name: 'Humuani Olanbiwonu',
       jobTitle:
@@ -84,10 +116,12 @@ function App() {
     {
       name: 'Kofo Olokun-Olawoyin,',
       jobTitle: 'Group head Legal & Company Secretary, Transcorp Pl',
+      imageSrc: Kofo,
     },
     {
       name: 'Abdulmajeed Amusah',
       jobTitle: 'Technical Assistant to the executive Secretary, SMDF',
+      imageSrc: Amussah,
     },
   ];
 
@@ -209,7 +243,7 @@ function App() {
         </section>
         <section className="section-keynote">
           <article className="summary">
-            <img src="" alt="Dr. Akintoye Akindele" width={450} />
+            <img src={AkintoyoAkindele} alt="Dr. Akintoye Akindele" />
             <h3>Dr. Akintoye Akindele</h3>
             <p>Chairman, Platform Capital</p>
           </article>
@@ -242,6 +276,7 @@ function App() {
               {speakerList.length > 0 &&
                 speakerList.map((speaker, index) => (
                   <PersonCard
+                    imageSrc={speaker.imageSrc}
                     altText={speaker.name}
                     name={speaker.name}
                     jobTitle={speaker.jobTitle}
@@ -273,6 +308,7 @@ function App() {
             {moderatorList.length > 0 &&
               moderatorList.map((moderator, index) => (
                 <PersonCard
+                  imageSrc={moderator.imageSrc}
                   altText={moderator.name}
                   name={moderator.name}
                   jobTitle={moderator.jobTitle}

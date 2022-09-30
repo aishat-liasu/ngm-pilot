@@ -9,3 +9,4 @@ This responsive website shows all the relevant information a participant would l
 1. Countdown timer to October 15th, 2022.
 2. Display of faqs using the disclosure tag – details and summary
 3. Slide with control buttons showing multiple speakers at once
+4. Popup to reveal more information about a speaker or guest

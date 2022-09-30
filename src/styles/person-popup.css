@@ -17,10 +17,10 @@
     justify-content: center;
     align-items: center;
     text-align: justify;
-    padding: 5% 7.5%;
+    padding: 5% 6%;
     border-radius: 10px;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 5%;
     background-color: var(--white);
     width: 50%;
     position: relative;
@@ -40,21 +40,46 @@
     width: 30px;
 }
 
+
 .person-content .person-profile {
     margin: 0 auto;
+    text-align: center;
+}
+
+.person-popup .person-profile img {
+    border-radius: 20px;
+    max-width: 320px;
+    width: 100%;
+    object-fit: contain;
 }
 
 .person-content .person-profile h3 {
     color: var(--darkblue);
     font-size: 24px;
-    margin: 20px 0;
-    text-align: left;
+    margin: 10px 0 5px 0;
+    text-align: center;
+}
+
+.person-content .person-profile h4 {
+    color: var(--darkblue);
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    text-align: center;
 }
 
 
 @media screen and (max-width: 700px) {
+
+    .person-content .close-btn {
+        top: 5px;
+        right: 5px;
+    }
+
+    .person-content .person-profile {
+        margin-top: 20px;
+    }
     .person-content {
-        width: 80%;
+        width: 90%;
         margin-top: 20%;
     }
 }

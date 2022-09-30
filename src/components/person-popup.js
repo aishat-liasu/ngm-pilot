@@ -3,7 +3,13 @@ import '../styles/person-popup.css';
 
 import closeIcon from '../images/close-icon.png';
 
-function PersonPopup({ imageSrc = '', altText = '', name, popupControl }) {
+function PersonPopup({
+  imageSrc = '',
+  altText = '',
+  name,
+  popupControl,
+  jobTitle,
+}) {
   const [popupState, setPopupState] = useState(false);
 
   const closeStyle = {
@@ -22,17 +28,16 @@ function PersonPopup({ imageSrc = '', altText = '', name, popupControl }) {
           <img src={closeIcon} alt="Close Icon" />
         </button>
         <div className="person-profile">
-          <img src={``} alt={altText} />
+          <img src={imageSrc} alt={altText} />
           <h3>{name}</h3>
+          <h4>{jobTitle}</h4>
         </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl
           elementum sem pulvinar tempus ipsum, amet, diam. Rutrum ultricies sed
           et risus condimentum parturient. Dignissim in sed turpis sodales
           lacinia. Ullamcorper non ullamcorper aliquet lacus, sem. Maecenas urna
-          ultrices ullamcorper quam orci. Augue elit sit nec maecenas elementum
-          convallis. Turpis et ullamcorper risus, in morbi cras ipsum senectus
-          euismod.
+          ultrices ullamcorper quam orci.
         </p>
       </article>
     </div>

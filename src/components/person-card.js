@@ -10,7 +10,7 @@ function PersonCard({
   setPopupData,
 }) {
   function openPopup() {
-    setPopupData({ imageSrc, altText, name });
+    setPopupData({ imageSrc, altText, name, jobTitle });
     setOpenPopup(true);
   }
 

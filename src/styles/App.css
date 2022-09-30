@@ -189,6 +189,8 @@
 
 .section-keynote .summary img {
   border-radius: 10px;
+  width: 100%;
+  object-fit: contain;
 }
 
 .section-keynote  h3 {
@@ -291,6 +293,7 @@
 .section-speakers .speaker-list li {
   margin-left: 20px;
   margin-right: 20px;
+  min-width: 300px;
 }
 
 

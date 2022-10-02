@@ -5,12 +5,13 @@ function PersonCard({
   altText = '',
   name,
   jobTitle,
+  description = '',
   index,
   setOpenPopup,
   setPopupData,
 }) {
   function openPopup() {
-    setPopupData({ imageSrc, altText, name, jobTitle });
+    setPopupData({ imageSrc, altText, name, jobTitle, description });
     setOpenPopup(true);
   }
 

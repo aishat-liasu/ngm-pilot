@@ -263,7 +263,7 @@
 
 .section-moderators .moderator-list {
   justify-content: space-around;
- 
+  flex-wrap: wrap;
 }
 
 .section-speakers .speaker-list {
@@ -290,13 +290,6 @@
 .section-speakers .speaker-list::-webkit-scrollbar-thumb:hover {
   background: var(--darkblue); 
 }
-
-.section-speakers .speaker-list li {
-  margin-left: 20px;
-  margin-right: 20px;
-  min-width: 300px;
-}
-
 
 .section-ready {
   display: flex;
@@ -535,11 +528,6 @@
 
   .section-speakers .speaker-list, .section-moderators .moderator-list {
     width: 100%;
-  }
-
-  .section-moderators .moderator-list {
-    display: block;
-    margin: 0 auto;
   }
 
   .section-pilot, .section-keynote, .section-ready, .section-sponsors {

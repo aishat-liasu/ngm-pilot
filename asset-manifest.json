@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ngm-pilot/static/css/main.85b55b81.css",
-    "main.js": "/ngm-pilot/static/js/main.c48dfca2.js",
+    "main.css": "/ngm-pilot/static/css/main.954ece93.css",
+    "main.js": "/ngm-pilot/static/js/main.91e6016d.js",
     "static/js/787.48bd1c06.chunk.js": "/ngm-pilot/static/js/787.48bd1c06.chunk.js",
     "static/media/Nwosu.jpg": "/ngm-pilot/static/media/Nwosu.e67c2d96f8cce0dc8896.jpg",
     "static/media/Akintoye-Akindele.png": "/ngm-pilot/static/media/Akintoye-Akindele.5951528f20e74ba606a4.png",
@@ -23,12 +23,12 @@
     "static/media/logo.png": "/ngm-pilot/static/media/logo.23320f03472d8e74e031.png",
     "static/media/hero-pattern.svg": "/ngm-pilot/static/media/hero-pattern.66887fd1a0b1b14b8a75.svg",
     "index.html": "/ngm-pilot/index.html",
-    "main.85b55b81.css.map": "/ngm-pilot/static/css/main.85b55b81.css.map",
-    "main.c48dfca2.js.map": "/ngm-pilot/static/js/main.c48dfca2.js.map",
+    "main.954ece93.css.map": "/ngm-pilot/static/css/main.954ece93.css.map",
+    "main.91e6016d.js.map": "/ngm-pilot/static/js/main.91e6016d.js.map",
     "787.48bd1c06.chunk.js.map": "/ngm-pilot/static/js/787.48bd1c06.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.85b55b81.css",
-    "static/js/main.c48dfca2.js"
+    "static/css/main.954ece93.css",
+    "static/js/main.91e6016d.js"
   ]
 }

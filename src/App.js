@@ -250,14 +250,32 @@ function App() {
           <article className="content">
             <h2>Keynote Speaker</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl
-              elementum sem pulvinar tempus ipsum, amet, diam. Rutrum ultricies
-              sed et risus condimentum parturient. Dignissim in sed turpis
-              sodales lacinia. Ullamcorper non ullamcorper aliquet lacus, sem.
-              Maecenas urna ultrices ullamcorper quam orci. Augue elit sit nec
-              maecenas elementum convallis. Turpis et ullamcorper risus, in
-              morbi cras ipsum senectus euismod. Urna amet nibh sed donec lacus.
-              lamcorper quam orci.
+              Dr. Akintoye Akindele is an investor, entrepreneur, lecturer and
+              philanthropist. Dr. Akindele is Chairman of Platform Capital;
+              Chairman of Unicorn; Co-Chair of WhiteSpace X, and CEO & Chairman
+              of Diatom Impact. He is also the Founder of Synergy Capital
+              Managers and Advisers and was Managing Partner of Synergy Capital
+              Managers up until November 30th 2019.
+            </p>
+            <p>
+              Dr. Akindele’s family office, Platform Capital, is a growth
+              markets focused, sector agnostic, principal investment firm.
+              Platform Capital deploys patient, value accretive capital
+              alongside international and local value investors to create
+              champion businesses with the ability for regional scale. It has
+              multiple investments in various sectors across the world.
+            </p>
+            <p>
+              Dr. Akindele completed his tertiary education in Nigeria,
+              obtaining a bachelor’s degree in Chemical Engineering with honours
+              from the Obafemi Awolowo University. He received a doctorate
+              degree in Business Administration (Finance) from the International
+              School of Management - Paris, France. Dr. Akindele is a CFA
+              charter holder and a trustee of the CFA society of Nigeria. He is
+              also an alumnus of the London and Said Business Schools, having
+              attended various senior executive programmes in Management and
+              Strategy, Advanced Corporate Finance and Private Equity amongst
+              others.
             </p>
           </article>
         </section>

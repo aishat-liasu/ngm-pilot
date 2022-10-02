@@ -35,9 +35,7 @@ function PersonPopup({
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl
           elementum sem pulvinar tempus ipsum, amet, diam. Rutrum ultricies sed
-          et risus condimentum parturient. Dignissim in sed turpis sodales
-          lacinia. Ullamcorper non ullamcorper aliquet lacus, sem. Maecenas urna
-          ultrices ullamcorper quam orci.
+          et risus condimentum parturient.
         </p>
       </article>
     </div>

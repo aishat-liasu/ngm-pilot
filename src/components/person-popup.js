@@ -7,6 +7,7 @@ function PersonPopup({
   imageSrc = '',
   altText = '',
   name,
+  description = '',
   popupControl,
   jobTitle,
 }) {
@@ -32,11 +33,7 @@ function PersonPopup({
           <h3>{name}</h3>
           <h4>{jobTitle}</h4>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl
-          elementum sem pulvinar tempus ipsum, amet, diam. Rutrum ultricies sed
-          et risus condimentum parturient.
-        </p>
+        <p>{description}</p>
       </article>
     </div>
   );

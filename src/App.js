@@ -66,6 +66,8 @@ function App() {
       name: 'Mr Paul Onwuanibe',
       jobTitle: 'CEO, Landmark Group',
       imageSrc: PaulOnwuanibe,
+      description:
+        'Paul Onwuanibe is the founder of Landmark Group. He has over 25 years of professional experience in project design and execution within and outside of Africa.',
     },
     {
       name: 'Moshood Olajide',
@@ -75,11 +77,15 @@ function App() {
     {
       name: 'Olayinka Subair',
       jobTitle: 'Country Manager, Pfizer Nigeria',
+      description:
+        "Olayinka Subair is Pfizer Nigeria's Country Manager and Cluster Lead, West Africa.",
     },
     {
       name: 'Chikezie Nwosu',
       jobTitle: 'MD/CEO Waltersmith Petroman Oil Limited',
       imageSrc: Nwosu,
+      description:
+        'Mr. Chikezie Nwosu is an experienced senior executive with over 29 years local & international experience in the oil & gas industry vis-a-viz management of oil & gas projects, new business development, divestments and acquisitions.',
     },
     {
       name: 'Modupe Kadri',
@@ -90,6 +96,8 @@ function App() {
       name: 'Toyin Kekere-Ekun',
       jobTitle: 'CEO Lotus Financial Services Limited',
       imageSrc: KekereEkun,
+      description:
+        'Ms. Kekere-Ekun is the Chief Executive Officer of Lotus Financial Services, a pioneer ethical and halal Financial Advisory Institution. Prior to her position as CEO she was Group Head Business Development and Operations of Lotus Financial Capital.',
     },
 
     {
@@ -298,6 +306,7 @@ function App() {
                     altText={speaker.name}
                     name={speaker.name}
                     jobTitle={speaker.jobTitle}
+                    description={speaker.description}
                     index={index}
                     openPopup={openPopup}
                     setOpenPopup={setOpenPopup}
@@ -394,7 +403,7 @@ function App() {
         <ul className="social-links">
           <li>
             <a
-              href="http://https://www.linkedin.com/company/ngm-platform/"
+              href="https://ng.linkedin.com/company/ngm-platform"
               target="_blank"
               rel="noopener noreferrer"
             >

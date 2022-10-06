@@ -75,12 +75,6 @@ function App() {
       imageSrc: MoshoodOlajide,
     },
     {
-      name: 'Olayinka Subair',
-      jobTitle: 'Country Manager, Pfizer Nigeria',
-      description:
-        "Olayinka Subair is Pfizer Nigeria's Country Manager and Cluster Lead, West Africa.",
-    },
-    {
       name: 'Chikezie Nwosu',
       jobTitle: 'MD/CEO Waltersmith Petroman Oil Limited',
       imageSrc: Nwosu,
@@ -99,24 +93,40 @@ function App() {
       description:
         'Ms. Kekere-Ekun is the Chief Executive Officer of Lotus Financial Services, a pioneer ethical and halal Financial Advisory Institution. Prior to her position as CEO she was Group Head Business Development and Operations of Lotus Financial Capital.',
     },
-
-    {
-      name: 'Shakiru Lawal',
-      jobTitle: 'Country Human Resource Manager, Nestle',
-      imageSrc: ShakiruLawal,
-    },
-
     {
       name: 'Bimpe Afolabi',
       jobTitle:
         'Partner in Internal Audit, Governance, Risk and Compliance Services, KPMG Nigeria',
       imageSrc: BimpeAfolabi,
     },
-
+    {
+      name: 'Shakiru Lawal',
+      jobTitle: 'Country Human Resource Manager, Nestle',
+      imageSrc: ShakiruLawal,
+    },
+    {
+      name: 'Olayinka Subair',
+      jobTitle: 'Country Manager, Pfizer Nigeria',
+      description:
+        "Olayinka Subair is Pfizer Nigeria's Country Manager and Cluster Lead, West Africa.",
+    },
     {
       name: 'Humuani Olanbiwonu',
       jobTitle:
         'Deputy General Manager Training and Welfare Lagos State Development and Property Corporation',
+    },
+  ];
+
+  const specialGuestList = [
+    {
+      name: 'Hon Hakeem Fahm',
+      jobTitle: 'Honourable Commissioner of Science and Technology, Lagos',
+      imageSrc: Fahm,
+    },
+    {
+      name: 'Hon Suleiman- Rotimi Iliasu',
+      jobTitle: 'Honourable Commissioner for Works & Transports, Kwara State',
+      imageSrc: Rotimi,
     },
   ];
 
@@ -287,6 +297,27 @@ function App() {
             </p>
           </article>
         </section>
+        
+        <section className="section-moderators" id="section-specialGuests">
+          <h2 id='special-guests-H2'>Special Guests of Honor</h2>
+
+          <ul className="moderator-list">
+            {specialGuestList.length > 0 &&
+              specialGuestList.map((specialGuest, index) => (
+                <PersonCard
+                  imageSrc={specialGuest.imageSrc}
+                  altText={specialGuest.name}
+                  name={specialGuest.name}
+                  jobTitle={specialGuest.jobTitle}
+                  index={index}
+                  openPopup={openPopup}
+                  setOpenPopup={setOpenPopup}
+                  setPopupData={setPopupData}
+                />
+              ))}
+          </ul>
+        </section>
+        
         <section className="section-speakers">
           <h2>Speakers and Guests</h2>
 

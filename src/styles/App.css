@@ -221,8 +221,17 @@
   background-color: var(--lightgreen);
 }
 
+#section-specialGuests {
+  background-color: var(--darkblue);
+}
+
 .section-speakers h2, .section-moderators h2 {
   color: var(--darkblue);
+  margin-bottom: 70px;
+}
+
+#special-guests-H2{
+  color: var(--white);
   margin-bottom: 70px;
 }
 

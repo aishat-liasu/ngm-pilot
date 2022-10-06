@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/user/public_html/pilot.ngmplatform.com
+    - export DEPLOYPATH=/home/qvmhdeikcudg/public_html/pilot.ngmplatform.com
     - /bin/cp index.html $DEPLOYPATH

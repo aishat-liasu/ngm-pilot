@@ -111,7 +111,7 @@ function App() {
         "Olayinka Subair is Pfizer Nigeria's Country Manager and Cluster Lead, West Africa.",
     },
     {
-      name: 'Humuani Olanbiwonu',
+      name: 'Humuanni Mogaji-Olambiwonnu',
       jobTitle:
         'Deputy General Manager Training and Welfare Lagos State Development and Property Corporation',
     },
@@ -124,7 +124,7 @@ function App() {
       imageSrc: Fahm,
     },
     {
-      name: 'Hon Suleiman- Rotimi Iliasu',
+      name: 'Hon Suleiman Rotimi Iliasu',
       jobTitle: 'Honourable Commissioner for Works & Transports, Kwara State',
       imageSrc: Rotimi,
     },
@@ -297,11 +297,11 @@ function App() {
             </p>
           </article>
         </section>
-        
-        <section className="section-moderators" id="section-specialGuests">
-          <h2 id='special-guests-H2'>Special Guests of Honor</h2>
 
-          <ul className="moderator-list">
+        <section className="section-guests">
+          <h2>Special Guests of Honor</h2>
+
+          <ul className="guest-list">
             {specialGuestList.length > 0 &&
               specialGuestList.map((specialGuest, index) => (
                 <PersonCard
@@ -317,9 +317,9 @@ function App() {
               ))}
           </ul>
         </section>
-        
+
         <section className="section-speakers">
-          <h2>Speakers and Guests</h2>
+          <h2>Speakers</h2>
 
           <div className="slider">
             <button
@@ -438,7 +438,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={linkedInIcon} alt="" />
+              <img src={linkedInIcon} alt="LinkedIn" />
             </a>
           </li>
           <li>
@@ -447,7 +447,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={twitterIcon} alt="" />
+              <img src={twitterIcon} alt="Twitter" />
             </a>
           </li>
           <li>
@@ -456,7 +456,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={instagramIcon} alt="" />
+              <img src={instagramIcon} alt="Instagram" />
             </a>
           </li>
         </ul>

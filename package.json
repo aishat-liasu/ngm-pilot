@@ -1,7 +1,7 @@
 {
   "name": "ngm-pilot",
   "version": "0.1.0",
-  "homepage": "https://aishat-liasu.github.io/ngm-pilot",
+  "homepage": "http://pilot.ngmplatform.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "react-scripts build && gh-pages -d build"
+    "deploy": "react-scripts build && cpanel-hosting -d build"
   },
   "eslintConfig": {
     "extends": [

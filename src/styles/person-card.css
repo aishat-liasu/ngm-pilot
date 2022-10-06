@@ -25,6 +25,9 @@
 .person-card article h3 {
     font-size: 20px;
     color: var(--darkblue);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .person-card article h4 {
@@ -35,3 +38,4 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+

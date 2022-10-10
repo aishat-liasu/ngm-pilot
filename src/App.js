@@ -21,6 +21,8 @@ import MoshoodOlajide from './images/speakers/Moshood-Olajide.jpg';
 import Nwosu from './images/speakers/Nwosu.jpg';
 import PaulOnwuanibe from './images/speakers/Paul-Onwuanibe.jpg';
 import ShakiruLawal from './images/speakers/Shakiru-Lawal.jpg';
+import OlayinkaSubair from './images/speakers/Olayinka-Subair.jpeg';
+import Humuanni from './images/speakers/Humua.jpg';
 
 import PersonCard from './components/person-card';
 import FaqWidget from './components/faq-widget';
@@ -57,7 +59,7 @@ function App() {
     },
     {
       question: 'My question has not been answered, who should I contact?',
-      answer: 'Please send an email to events@ngmplatform.com',
+      answer: 'Please send an email to info@ngmplatform.com',
     },
   ];
 
@@ -109,11 +111,13 @@ function App() {
       jobTitle: 'Country Manager, Pfizer Nigeria',
       description:
         "Olayinka Subair is Pfizer Nigeria's Country Manager and Cluster Lead, West Africa.",
+      imageSrc: OlayinkaSubair
     },
     {
       name: 'Humuanni Mogaji-Olambiwonnu',
       jobTitle:
         'Deputy General Manager Training and Welfare Lagos State Development and Property Corporation',
+        imageSrc: Humuanni
     },
   ];
 
@@ -132,7 +136,7 @@ function App() {
 
   const moderatorList = [
     {
-      name: 'Kofo Olokun-Olawoyin,',
+      name: 'Kofo Olokun-Olawoyin',
       jobTitle: 'Group head Legal & Company Secretary, Transcorp Pl',
       imageSrc: Kofo,
     },
@@ -237,12 +241,12 @@ function App() {
                 Save your seat
               </a>
               <a
-                href="http://"
+                href="http://drive.google.com/file/d/1TOK2sawij_BdFxc5iYGQkAPQg90U8hXS/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="download-link"
               >
-                Download event agenda
+                Download Event Brochure
               </a>
             </nav>
           </section>
@@ -410,7 +414,7 @@ function App() {
           <h3>Want to sponsor the event?</h3>
           <p>
             <span>Please contact us at </span>
-            <a href="mailto:events@ngmplatform.com">events@ngmplatform.com</a>
+            <a href="mailto:info@ngmplatform.com">info@ngmplatform.com</a>
           </p>
         </section>
 
@@ -429,7 +433,7 @@ function App() {
         <address>
           <a href="tel:+2348100579094">(234) 810 057 9094</a>
           <a href="tel:+2349126937936">(234) 912 693 7936</a>
-          <a href="mailto:events@ngmplatform.com">events@ngmplatform.com</a>
+          <a href="mailto:info@ngmplatform.com">info@ngmplatform.com</a>
         </address>
         <ul className="social-links">
           <li>

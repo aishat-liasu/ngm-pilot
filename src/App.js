@@ -111,13 +111,13 @@ function App() {
       jobTitle: 'Country Manager, Pfizer Nigeria',
       description:
         "Olayinka Subair is Pfizer Nigeria's Country Manager and Cluster Lead, West Africa.",
-      imageSrc: OlayinkaSubair
+      imageSrc: OlayinkaSubair,
     },
     {
       name: 'Humuanni Mogaji-Olambiwonnu',
       jobTitle:
         'Deputy General Manager Training and Welfare Lagos State Development and Property Corporation',
-        imageSrc: Humuanni
+      imageSrc: Humuanni,
     },
   ];
 
@@ -246,7 +246,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="download-link"
               >
-                Download Event Brochure
+                Download event brochure
               </a>
             </nav>
           </section>

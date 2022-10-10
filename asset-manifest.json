@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ngm-pilot/static/css/main.12eb6d0c.css",
+    "main.css": "/ngm-pilot/static/css/main.924879b2.css",
     "main.js": "/ngm-pilot/static/js/main.9e54996d.js",
     "static/js/787.48bd1c06.chunk.js": "/ngm-pilot/static/js/787.48bd1c06.chunk.js",
     "static/media/Nwosu.jpg": "/ngm-pilot/static/media/Nwosu.e67c2d96f8cce0dc8896.jpg",
@@ -25,12 +25,12 @@
     "static/media/Humua.jpg": "/ngm-pilot/static/media/Humua.077cde3360b6d277c6a5.jpg",
     "static/media/Olayinka-Subair.jpeg": "/ngm-pilot/static/media/Olayinka-Subair.f7398e4053a52a259d92.jpeg",
     "index.html": "/ngm-pilot/index.html",
-    "main.12eb6d0c.css.map": "/ngm-pilot/static/css/main.12eb6d0c.css.map",
+    "main.924879b2.css.map": "/ngm-pilot/static/css/main.924879b2.css.map",
     "main.9e54996d.js.map": "/ngm-pilot/static/js/main.9e54996d.js.map",
     "787.48bd1c06.chunk.js.map": "/ngm-pilot/static/js/787.48bd1c06.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.12eb6d0c.css",
+    "static/css/main.924879b2.css",
     "static/js/main.9e54996d.js"
   ]
 }
